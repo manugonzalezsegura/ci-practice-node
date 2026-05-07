@@ -15,3 +15,5 @@ npm run dev
 npm run lint
 npm run build
 npm start
+
+CI básico configurado con GitHub Actions.
