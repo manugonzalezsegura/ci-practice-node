@@ -6,7 +6,7 @@ describe('getHealthResponse', () => {
     const result = getHealthResponse();
 
     expect(result).toEqual({
-      status: 'ok',
+      status: 'oki',
       message: 'CI practice API is running',
     });
   });
