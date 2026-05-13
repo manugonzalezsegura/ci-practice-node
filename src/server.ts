@@ -1,5 +1,5 @@
 import http from 'http';
-
+import { getHealthResponse } from './health.js';
 const PORT = 3000;
 
 const server = http.createServer((request, response) => {
@@ -8,10 +8,7 @@ const server = http.createServer((request, response) => {
   if (request.method === 'GET' && request.url === '/health') {
     response.writeHead(200, { 'Content-Type': 'application/json' });
     response.end(
-      JSON.stringify({
-        status: 'ok',
-        message: 'CI practice API is running',
-      }),
+      JSON.stringify(getHealthResponse()),
     );
 
     return;
