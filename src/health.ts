@@ -5,7 +5,7 @@ export interface HealthResponse {
 
 export function getHealthResponse(): HealthResponse {
   return {
-    status: 'ok',
+    status: 'oki',
     message: 'CI practice API is running',
   };
 }
